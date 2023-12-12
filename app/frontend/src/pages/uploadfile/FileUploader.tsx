@@ -61,7 +61,7 @@ const FileUploader: React.FC = () => {
   return (
     <div className={styles.uploadContainer}>
       <div className={styles.uploadTopSection}>
-        <h1 className={styles.uploadTitle}>Index your data</h1>
+        <h1 className={styles.uploadTitle}>Bring your data</h1>
       </div>
       <div
         {...getRootProps()}

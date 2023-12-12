@@ -10,7 +10,7 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        <h3 className={styles.headerTitle}>Enterprise data Q&A With GPT| Demo</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
@@ -26,11 +26,11 @@ const Layout = () => {
                             </li>
                             <li className={styles.headerNavLeftMargin}>
                                 <NavLink to="/ul" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Index your data
+                                    Bring your data
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://github.com/lordlinus/Enterprise-ChatGPT" target={"_blank"} title="Github repository link">
+                                <a href="https://github.com/ZEGUK/Enterprise-ChatGPT" target={"_blank"} title="Github repository link">
                                     <img
                                         src={github}
                                         alt="Github logo"
@@ -43,7 +43,7 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4>
+                    <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search + Bing Search</h4>
                 </div>
             </header>
 

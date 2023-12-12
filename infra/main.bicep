@@ -32,7 +32,7 @@ param openAiResourceGroupName string = ''
 // OpenAI is only available in these regions
 // aligned with region location parameter
 @allowed([ 'eastus', 'southcentralus', 'westeurope' ])
-param openAiResourceGroupLocation string = location
+param openAiResourceGroupLocation string = 'westeurope'
 
 param openAiSkuName string = 'S0'
 
@@ -57,7 +57,7 @@ var tags = { 'azd-env-name': environmentName }
 // Organize resources in a resource group
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: !empty(resourceGroupName) ? resourceGroupName : '${abbrs.resourcesResourceGroups}${environmentName}'
-  location: location
+  location: 'southcentralus'
   tags: tags
 }
 
